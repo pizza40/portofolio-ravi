@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/developer.svg" type="image/x-icon">
+    <title>Portofolio</title>
+</head>
+<body class="bg-gray-300">
+    <div class="container mx-auto py-3 px-12">
+        <!-- Navbar -->
+        <header>
+            <div class="flex justify-between px-10">
+                <img src="img/coding2.svg" class="w-40 " alt="logo">
+                <div>
+                    <ul class="flex my-9 px-4">
+                        <li class="mr-6 font-poppins font-medium text-gray-600">
+                            <a href="#profile">Profile</a>
+                        </li>
+                        <li class="mr-6 font-poppins font-medium text-gray-600">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="mr-6 font-poppins font-medium text-gray-600">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End of Navbar -->
+
+        <!-- Home -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 py-12 px-10">
+                <div class="pt-5">
+                    <h1 class="font-bold text-3xl text-blue-800">Hello!</h1>
+                    <h1 class="mt-2 text-6xl font-bold text-blue-800">I'M RAVI</h1>
+                    <p class="mt-2 font-medium text-xl text-gray-600">I am interested in developing software, especially developing a beautiful website.</p>
+                    <button class="mt-7 my-2 py-1 px-8 border rounded-full bg-blue-800 hover:bg-blue-600 duration-200 text-white"><a href="#profile">Let's Talk</a></button>
+                </div>
+                <img src="img/developer.svg" class="r-30" alt="developer">
+            </div>
+        </section>
+        <!-- End pf Home -->
+    </div>
+
+    <!-- Profile -->
+    <section id="profile">
+        <div class="container bg-blue-800">
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-12 px-12">
+                <div class="px-10">
+                    <figure class="rounded-xl">
+                        <img src="img/profile.jpg" class="w-4/5 my-12 rounded-full" alt="profile">
+                    </figure>
+                </div>
+
+                <div class="text-center">
+                    <div class="my-12 py-12">
+                        <h1 class="text-white text-4xl font-bold pt-8">Hi, Nice to meet you.</h1>
+                        <p class="text-white text-xl font-medium pt-5">My name is Ravi Attar Shahrulsyah. I was born in Jakarta, October 29 2002. My hobbies are playing video games, swimming and cycling. 
+                            Since I entered high school, I started to be interested in programming. I have internship experience as a software developer at Badan Narkotika Nasional (National Narcotics Agency), and PT. Centerpark Citra Corpora.</p>
+                        <p class="text-white text-xl font-medium pt-4">Now, I'm looking for opportunities to gain work experience and to expand my expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Profile -->
+
+    <div class="container mx-auto py-3 px-12">
+        <!-- Project -->
+        <section id="projects">
+            <div class="px-10 py-10">
+                <h1 class="text-center text-3xl font-bold text-blue-800">Here are some projects i've been working on lately</h1>
+                <hr class="bg-blue-600 mt-3">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 my-12">
+                    <img src="img/prototype1.svg" class="shadow-lg rounded" alt="project1">
+
+                    <div class="text-center mx-5">
+                        <div class="my-12 py-12">
+                            <h1 class="text-3xl font-semibold text-blue-800">KuotaKu</h1>
+                            <p class="text-lg pt-4 text-gray-600 font-medium">KuotaKu is mobile application to manage your internet quota. You can also buy your internet package in KuotaKu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 my-12">
+                    <img src="img/prototype2.svg" class="shadow-lg rounded order-last" alt="project2">
+
+                    <div class="text-center mx-5 order-first">
+                        <div class="my-12 py-12">
+                            <h1 class="text-3xl font-semibold text-blue-800">KuotaKu</h1>
+                            <p class="text-lg pt-4 text-gray-600 font-medium">KuotaKu is mobile application to manage your internet quota. You can also buy your internet package in KuotaKu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Project -->
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="text-center ">
+                <h1 class="text-4xl mt-5 font-bold text-blue-800">GET IN TOUCH</h1>
+                <p class="text-lg py-3  text-gray-600 font-medium">Interested in working together? <br> Feel free to contact me for any project or collaboration.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <img src="img/contact.svg" class="mt-3" alt="contact">
+
+                <div>
+                    <div class="flex">
+                        <input type="text" class="my-3 mx-4 px-7 py-2 rounded-md" placeholder="Name">
+                        <input type="email" class="my-3 px-7 py-2 rounded-md" placeholder="Email">
+                    </div>
+                    <input type="text" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md" placeholder="Subject">
+                    <textarea name="message" placeholder="Message" class="my-3 mx-4 px-7 py-2 w-5/6 rounded-md" id="" cols="30" rows="5"></textarea>
+                    <button type="submit" class="my-3 mx-4 py-1 px-8 border rounded-full bg-blue-800 hover:bg-blue-600 duration-200 text-white">Send</button>
+                </div>
+            </div>
+        </section>
+        <!-- End of Contact -->
+
+        <footer>
+            <div class="mt-10 py-3">
+                <div class="grid grid-cols-1">
+                    <div class="flex justify-center">
+                        <a href="https://linkedin.com/in/ravi-attar-shahrulsyah-57b8a61b1" class="mr-6">
+                            <img src="img/linkedin.svg" style="width: 40px;" alt="linkedin">
+                        </a>
+                        <a href="https://github.com/pizza40" class="mr-6">
+                            <img src="img/github.svg" style="width: 40px;" alt="linkedin">
+                        </a>
+                        <a href="https://www.instagram.com/rav.attr/" class="mr-6">
+                            <img src="img/instagram.svg" style="width: 40px;" alt="linkedin">
+                        </a>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                        <p class="font-medium">&copy;2021 All Right Reserved - <strong>Created with &#10084; by Ravi</strong></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<style>
+    strong{
+        color: #6c63ff;
+    }
+
+    html, body{
+        scroll-behavior: smooth;
+    }
+</style>
+</html>
