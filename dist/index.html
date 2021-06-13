@@ -112,15 +112,18 @@
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <img src="img/contact.svg" class="mt-3" alt="contact">
 
-                <div>
-                    <div class="flex">
-                        <input type="text" class="my-3 mx-4 px-7 py-2 rounded-md" placeholder="Name">
-                        <input type="email" class="my-3 px-7 py-2 rounded-md" placeholder="Email">
+                <form name="Ravi-Contact-Form">
+                    <div>
+                        <div class="flex">
+                            <input type="text" class="my-3 mx-4 px-7 py-2 rounded-md" name="name" placeholder="Name">
+                            <input type="email" class="my-3 px-7 py-2 rounded-md" name="email" placeholder="Email">
+                        </div>
+                        <input type="text" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md" name="subject" placeholder="Subject">
+                        <textarea name="message" placeholder="Message" class="my-3 mx-4 px-7 py-2 w-5/6 rounded-md" name="message" id="" cols="30" rows="5"></textarea>
+                        <button type="submit" class="my-3 mx-4 py-1 px-8 border rounded-full bg-blue-800 hover:bg-blue-600 duration-200 text-white">Send</button>
+                        
                     </div>
-                    <input type="text" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md" placeholder="Subject">
-                    <textarea name="message" placeholder="Message" class="my-3 mx-4 px-7 py-2 w-5/6 rounded-md" id="" cols="30" rows="5"></textarea>
-                    <button type="submit" class="my-3 mx-4 py-1 px-8 border rounded-full bg-blue-800 hover:bg-blue-600 duration-200 text-white">Send</button>
-                </div>
+                </form>
             </div>
         </section>
         <!-- End of Contact -->
@@ -147,6 +150,18 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwH718gEFk9EFAT-K_DZrW-CLyDJHjbpPpgPM2YkqMlzKe0wnqDFqmqq94GpRZiFtcP/exec'
+        const form = document.forms['Ravi-Contact-Form']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 <style>
