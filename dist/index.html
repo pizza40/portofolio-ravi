@@ -12,13 +12,13 @@
     <title>Portofolio</title>
 </head>
 <body class="bg-gray-300">
-    <div class="container mx-auto py-3 px-12">
+    <div class="container mx-auto py-3 px-4 md:px-12">
         <!-- Navbar -->
         <header>
-            <div class="flex justify-between px-10">
-                <img src="img/coding2.svg" class="w-40 " alt="logo">
+            <div class="flex justify-between md:px-10">
+                <img src="img/coding2.svg" class="w-20 md:w-40" alt="logo">
                 <div>
-                    <ul class="flex my-9 px-4">
+                    <ul class="flex py-3 md:py-0 ml-3 md:ml-0 md:my-9 px-4">
                         <li class="mr-6 font-poppins font-medium text-gray-600">
                             <a href="#profile">Profile</a>
                         </li>
@@ -36,14 +36,14 @@
 
         <!-- Home -->
         <section>
-            <div class="grid grid-cols-1 md:grid-cols-2 py-12 px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2  md:py-12 md:px-10">
                 <div class="pt-5">
                     <h1 class="font-bold text-3xl text-blue-800">Hello!</h1>
-                    <h1 class="mt-2 text-6xl font-bold text-blue-800">I'M RAVI</h1>
-                    <p class="mt-2 font-medium text-xl text-gray-600">I am interested in developing software, especially developing a beautiful website.</p>
+                    <h1 class="md:mt-2 text-6xl font-bold text-blue-800">I'M RAVI</h1>
+                    <p class="mt-2 font-normal md:font-medium text-sm md:text-xl text-gray-600">I am interested in developing software, especially developing a beautiful website.</p>
                     <button class="mt-7 my-2 py-1 px-8 border rounded-full bg-blue-800 hover:bg-blue-600 duration-200 text-white"><a href="#profile">Let's Talk</a></button>
                 </div>
-                <img src="img/developer.svg" class="r-30" alt="developer">
+                <img src="img/developer.svg" class="r-30 mt-6 md:mt-0 px-3 md:px-0" alt="developer">
             </div>
         </section>
         <!-- End pf Home -->
@@ -52,19 +52,19 @@
     <!-- Profile -->
     <section id="profile">
         <div class="container bg-blue-800">
-            <div class="grid grid-cols-1 md:grid-cols-2 mt-12 px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 px-4 md:px-12 justify-items-center">
                 <div class="px-10">
-                    <figure class="rounded-xl">
-                        <img src="img/profile.jpg" class="w-4/5 my-12 rounded-full" alt="profile">
+                    <figure class="rounded-xl mx-auto">
+                        <img src="img/profile.jpg" class="w-4/5 ml-5 md:ml-0 my-7 md:my-12 rounded-full" alt="profile">
                     </figure>
                 </div>
 
-                <div class="text-center">
-                    <div class="my-12 py-12">
-                        <h1 class="text-white text-4xl font-bold pt-8">Hi, Nice to meet you.</h1>
-                        <p class="text-white text-xl font-medium pt-5">My name is Ravi Attar Shahrulsyah. I was born in Jakarta, October 29 2002. My hobbies are playing video games, swimming and cycling. 
+                <div class="text-center mb-5 md:mb-0">
+                    <div class="my-4 md:my-12 md:py-12">
+                        <h1 class="text-white text-xl md:text-4xl font-bold md:pt-8">Hi, Nice to meet you.</h1>
+                        <p class="text-white text-sm md:text-xl font-medium mt-5 md:pt-5">My name is Ravi Attar Shahrulsyah. I was born in Jakarta, October 29 2002. My hobbies are playing video games, swimming and cycling. 
                             Since I entered high school, I started to be interested in programming. I have internship experience as a software developer at Badan Narkotika Nasional (National Narcotics Agency), and PT. Centerpark Citra Corpora.</p>
-                        <p class="text-white text-xl font-medium pt-4">Now, I'm looking for opportunities to gain work experience and to expand my expertise.</p>
+                        <p class="text-white text-sm md:text-xl font-medium mt-4">Now, I'm looking for opportunities to gain work experience and to expand my expertise.</p>
                     </div>
                 </div>
             </div>
@@ -72,20 +72,20 @@
     </section>
     <!-- End of Profile -->
 
-    <div class="container mx-auto py-3 px-12">
+    <div class="container mx-auto py-3 px-3 md:px-12">
         <!-- Project -->
         <section id="projects">
-            <div class="px-10 py-10">
-                <h1 class="text-center text-3xl font-bold text-blue-800">Here are some projects i've been working on lately</h1>
-                <hr class="bg-blue-600 mt-3">
+            <div class="px-4 md:px-10 py-5 md:py-10">
+                    <h1 class="text-center text-xl   md:text-3xl font-bold text-blue-800">Here are some projects i've been working on lately</h1>
+                    <hr class="bg-blue-600 mt-3 md:mx-16">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 my-12">
-                    <img src="img/art-by-code.svg" class="shadow-lg rounded" alt="project1">
+                    <img src="img/project/art-by-code.svg" class="shadow-lg rounded" alt="project1">
 
                     <div class="text-center mx-5">
-                        <div class="my-12 py-12">
-                            <h1 class="text-3xl font-semibold text-blue-800">Art By Code</h1>
-                            <p class="text-lg pt-4 text-gray-600 font-medium">Art By Code is a place where you can put your project for our team to work on. We can provide service such as
+                        <div class="my-2 md:my-12 py-5 md:py-12">
+                            <h1 class="text-2xl md:text-3xl font-semibold text-blue-800">Art By Code</h1>
+                            <p class="text-base md:text-lg pt-4 text-gray-600 font-medium">Art By Code is a place where you can put your project for our team to work on. We can provide service such as
                                 Web Development, Mobile Development, UI/UX Design, Machine Learning, Automation System, Branding & Digital Ads.
                             </p>
                         </div>
@@ -93,12 +93,12 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 my-12">
-                    <img src="img/prototype2.svg" class="shadow-lg rounded order-last" alt="project2">
+                    <img src="img/project/ravmovie.svg" class="shadow-2xl rounded order-first md:order-last" alt="project2">
 
-                    <div class="text-center mx-5 order-first">
-                        <div class="my-12 py-12">
-                            <h1 class="text-3xl font-semibold text-blue-800">KuotaKu</h1>
-                            <p class="text-lg pt-4 text-gray-600 font-medium">KuotaKu is mobile application to manage your internet quota. You can also buy your internet package in KuotaKu.</p>
+                    <div class="text-center mx-5 order-last md:order-first">
+                        <div class="my-2 md:my-12 py-5 md:py-12">
+                            <h1 class="text-2xl md:text-3xl font-semibold text-blue-800">RavMovie</h1>
+                            <p class="text-base md:text-lg pt-4 text-gray-600 font-medium">RavMovie is the place for you movies lover to see the details of Popular Movies and also Now Playing Movie.</p>
                         </div>
                     </div>
                 </div>
@@ -115,24 +115,25 @@
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <img src="img/contact.svg" class="mt-3" alt="contact">
 
-                <form name="Ravi-Contact-Form">
-                    <div>
-                        <div class="flex">
-                            <input type="text" class="my-3 mx-4 px-7 py-2 rounded-md" name="name" placeholder="Name">
-                            <input type="email" class="my-3 px-7 py-2 rounded-md" name="email" placeholder="Email">
+                <div class="ml-3 mt-4 md:mt-0">
+                    <form name="Ravi-Contact-Form">
+                        <div class="flex-col">
+                            <input type="text" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md" name="name" placeholder="Name" autofocus>
+                            <input type="email" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md" name="email" placeholder="Email">
+                            
+                            <input type="text" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md" name="subject" placeholder="Subject">
+                            <textarea name="message" placeholder="Message" class="my-3 mx-4 px-7 py-3 w-5/6 rounded-md" name="message" id="" cols="30" rows="5"></textarea>
+                            <button type="submit" class="my-3 mx-4 py-2 px-8 border rounded-full bg-blue-800 hover:bg-blue-600 duration-200 text-white">Send</button>
+                            
                         </div>
-                        <input type="text" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md" name="subject" placeholder="Subject">
-                        <textarea name="message" placeholder="Message" class="my-3 mx-4 px-7 py-2 w-5/6 rounded-md" name="message" id="" cols="30" rows="5"></textarea>
-                        <button type="submit" class="my-3 mx-4 py-1 px-8 border rounded-full bg-blue-800 hover:bg-blue-600 duration-200 text-white">Send</button>
-                        
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
         <!-- End of Contact -->
 
         <footer>
-            <div class="mt-10 py-3">
+            <div class="mt-3 md:mt-10 py-3">
                 <div class="grid grid-cols-1">
                     <div class="flex justify-center">
                         <a href="https://linkedin.com/in/ravi-attar-shahrulsyah-57b8a61b1" class="mr-6">
@@ -147,7 +148,7 @@
                     </div>
 
                     <div class="mt-4 text-center">
-                        <p class="font-medium">&copy;2021 All Right Reserved - <strong>Created with &#10084; by Ravi</strong></p>
+                        <p class="font-normal md:font-medium text-xs md:text-normal">&copy;2021 All Right Reserved - <strong>Created with &#10084; by Ravi</strong></p>
                     </div>
                 </div>
             </div>
